@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>John Whiles</title>
-    <link rel='stylesheet' href='src/main.css' type="text/css"
+    <link rel='stylesheet' href='src/grid.css' type="text/css">
+    <link rel='stylesheet' href='src/main.css' type="text/css">
+    <link rel='stylesheet' href='src/home.css' type="text/css">
+
   </head>
   <body>
-    <nav>
+    <nav class='nav-bar'>
       <ul class='nav-list'>
-        <li class='nav-item'><a>Home</a></li>
-        <li class='nav-item'><a>Blog</a></li>
+        <li class='nav-item'><a class='nav-list-link'>Home</a></li>
+        <li class='nav-item'><a class='nav-list-link'>Blog</a></li>
       </ul>
     </nav>
 
@@ -20,10 +23,12 @@
     </section>
     <section class='portfolio'>
       <h2>My Projects</h2>
-      <h3>Something</h3>
-      <h3>Something Else</h3>
+      <div class='col-6'><h3>Something</h3></div>
+      <div class='col-3'><h3>Something Else</h3></div>
+      <div class='col-3'><h3>Something Else</h3></div>
+
     </section>
-    <footer>
+    <footer class='foot'>
       <h2>contact me<h2>
         <a href='https://uk.linkedin.com/in/john-whiles-362461100'>LinkedIn</a>
     </footer>

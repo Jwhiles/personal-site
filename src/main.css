@@ -1,5 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-bar {
+
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-item {
+  float:left;
+}
+
+.nav-list-link {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.3rem;
+}
+
+.nav-list-link:hover {
+  background-color: orange;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: futura;
   margin:auto;
   text-align: center;
+  width: 90%;
+  max-width: 1200px
+}
+
+.foot {
+  background-color: black;
+  color: white;
 }
