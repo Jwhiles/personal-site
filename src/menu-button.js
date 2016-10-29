@@ -1,4 +1,4 @@
-var clicked = false;
+var clicked = true;
 
 function openMenu() {
   console.log('hi')
@@ -13,3 +13,7 @@ function openMenu() {
 }
 
 document.getElementById('icon').addEventListener('click', openMenu);
+
+window.onload = function() {
+  openMenu();
+}
