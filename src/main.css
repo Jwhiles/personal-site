@@ -30,6 +30,13 @@
   background-color: orange;
 }
 
+.icon {
+  float: right;
+  display:none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 h1 {
   background-color: black;
   color: white;
@@ -48,4 +55,42 @@ body {
 .foot {
   background-color: black;
   color: white;
+}
+
+/*
+Media queries to show and hide navbar/burger icon
+*/
+
+@media screen and (max-width:680px) {
+
+    .nav-list-link {
+      display: none;
+    }
+  .icon {
+    float:right;
+    display: inline-block;
+  }
+
+  .home {
+    display: inline-block;
+  }
+
+  .nav-list.clicked {
+    position: relative;
+  }
+
+  .nav-list.clicked .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-list.clicked .nav-item {
+    float:none;
+    display: inline;
+  }
+
+  .nav-list.clicked .nav-item .nav-list-link {
+    display:block;
+    text-align: left;
+  }
 }
