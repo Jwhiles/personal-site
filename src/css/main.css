@@ -2,12 +2,16 @@
     box-sizing: border-box;
 }
 
+p {
+  font-size: 20px
+}
+
 
 h1 {
   background-color: black;
   color: white;
   margin: 0;
-  padding: 0 0 7px 0;
+  padding: 0 0 3px 0;
   font-size: 3rem;
 }
 

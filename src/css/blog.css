@@ -1,9 +1,21 @@
 .blog-image {
   width: 100%;
+  max-width: 760px
 }
 
 .blog-post {
+  margin: 10px auto;
   border-bottom: solid black 5px;
   margin-bottom: 30px;
-  padding-bottom: 30px
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.blog-post-title {
+  font-size: 2rem;
+}
+
+.blog-post-content {
+  margin: 30px auto;
+  max-width: 760px;
 }

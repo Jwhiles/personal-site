@@ -1,5 +1,15 @@
+.about-contents {
+    margin: 10px auto;
+    max-width: 760px;
+}
+
 .portfolio-image {
   width: 100%;
+}
+
+
+.section-title {
+  font-size: 2rem;
 }
 
 
