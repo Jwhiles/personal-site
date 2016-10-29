@@ -1,0 +1,9 @@
+.blog-image {
+  width: 100%;
+}
+
+.blog-post {
+  border-bottom: solid black 5px;
+  margin-bottom: 30px;
+  padding-bottom: 30px
+}
