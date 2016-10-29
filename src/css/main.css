@@ -2,13 +2,25 @@
     box-sizing: border-box;
 }
 
+p {
+  font-size: 20px
+}
+
 
 h1 {
   background-color: black;
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 0 0 3px 0;
   font-size: 3rem;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 /*
@@ -32,6 +44,9 @@ Styling for the navbar, this is also effected in a media query later in the page
   text-decoration: none;
   transition: 0.3s;
   font-size: 1.3rem;
+  user-select: none;
+  cursor: pointer;
+
 }
 
 .nav-list-link:hover {
@@ -43,6 +58,7 @@ Styling for the navbar, this is also effected in a media query later in the page
   display:none;
   transition: 0.3s;
   cursor: pointer;
+  user-select: none;
 }
 
 /*
