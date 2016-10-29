@@ -1,0 +1,6 @@
+
+.portfolio:after {
+    content: "";
+    clear: both;
+    display: block;
+}

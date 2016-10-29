@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-bar {
+
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-item {
+  float:left;
+}
+
+.nav-list-link {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.3rem;
+}
+
+.nav-list-link:hover {
+  background-color: orange;
+}
+
+.icon {
+  float: right;
+  display:none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: futura;
+  margin:auto;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px
+}
+
+.foot {
+  background-color: black;
+  color: white;
+}
+
+/*
+Media queries to show and hide navbar/burger icon
+*/
+
+@media screen and (max-width:680px) {
+
+    .nav-list-link {
+      display: none;
+    }
+  .icon {
+    float:right;
+    display: inline-block;
+  }
+
+  .home {
+    display: inline-block;
+  }
+
+  .nav-list.clicked {
+    position: relative;
+  }
+
+  .nav-list.clicked .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-list.clicked .nav-item {
+    float:none;
+    display: inline;
+  }
+
+  .nav-list.clicked .nav-item .nav-list-link {
+    display:block;
+    text-align: left;
+  }
+}
