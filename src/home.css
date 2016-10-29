@@ -1,4 +1,10 @@
 
+.portfolio-image {
+  height:100%;
+  overflow: hidden;
+}
+
+
 .portfolio:after {
     content: "";
     clear: both;
