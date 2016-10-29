@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+
+h1 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+}
+
+/*
+Styling for the navbar, this is also effected in a media query later in the page
+*/
 .nav-list {
   list-style-type: none;
   margin: 0;
@@ -33,12 +45,10 @@
   cursor: pointer;
 }
 
-h1 {
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
+/*
+
+*/
+
 
 body {
   font-family: futura;
@@ -48,11 +58,9 @@ body {
   max-width: 1200px
 }
 
-.portfolio-image {
-  width: 100%;
-  height:100%;
-  overflow: hidden;
-}
+/*
+Styles the footer and links within it
+*/
 
 .foot {
   background-color: black;
