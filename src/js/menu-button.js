@@ -1,7 +1,7 @@
 var clicked = true;
 
 function openMenu() {
-  console.log('hi')
+  console.log()
 
   if(!clicked) {
     document.getElementById('nav-list').className = 'nav-list clicked';
