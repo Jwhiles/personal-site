@@ -85,6 +85,7 @@ Styles the footer and links within it
 }
 
 .contact-link {
+  text-decoration: none;
   color: pink;
 }
 
@@ -126,12 +127,11 @@ Media queries to show and hide navbar/burger icon
   .nav-list.clicked .nav-item {
     float:none;
     display: inline;
-    z-index: 100;
-
   }
 
   .nav-list.clicked .nav-item .nav-list-link {
     display:block;
     text-align: left;
+    z-index: 1;
   }
 }
