@@ -4,7 +4,9 @@
 }
 
 .portfolio-image {
-  width: 100%;
+    width: 100%;
+    clip: rect(0px,10px,10px,0px);
+
 }
 
 

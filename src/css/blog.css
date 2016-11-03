@@ -19,3 +19,7 @@
   margin: 30px auto;
   max-width: 760px;
 }
+
+time {
+  font-weight: bold;
+}
