@@ -1,19 +1,8 @@
-.about-contents {
-    margin: 10px auto;
-    max-width: 760px;
-}
-
 .portfolio-image {
     width: 100%;
     clip: rect(0px,10px,10px,0px);
 
 }
-
-
-.section-title {
-  font-size: 2rem;
-}
-
 
 .portfolio:after {
     content: "";

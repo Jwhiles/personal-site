@@ -81,6 +81,7 @@ Styles the footer and links within it
 .foot {
   background-color: black;
   color: white;
+  padding: 0.5px;
 }
 
 .contact-link {
