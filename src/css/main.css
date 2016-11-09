@@ -6,6 +6,9 @@ p {
   font-size: 20px
 }
 
+body {
+  line-height: 1.6;
+}
 
 h1 {
   background-color: black;
@@ -132,6 +135,5 @@ Media queries to show and hide navbar/burger icon
   .nav-list.clicked .nav-item .nav-list-link {
     display:block;
     text-align: left;
-    z-index: 1;
   }
 }

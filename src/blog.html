@@ -25,10 +25,56 @@
     </nav>
 
     <article class='blog-post'>
-      <h2 class='blog-post-title'>Things you could do with APIs</h2>
+      <h2 class='blog-post-title'>Javascript is Weird</h2>
+      <time class='blog-post-time'>8:57pm 09-11-2016</time>
       <p class='blog-post-content'>
-        <time>8:32pm 03-11-2016</time>
+        I am currently studying at Founders and Coders in London. It is a web development bootcamp that focuses on Javascript and Node JS.
+        <br>
+        <br>
+
+        During the course of my studies I came across some behaviour in Javascript that I found to be counterintuitive, and which demonstrates why a solid understanding of how your programming language works is important.
+        <br>
+        <br>
+
+        Look at the two code snippets below. I assumed that they would behave identically. In reality only one of them works correctly. Can you spot which one will work?
+        <br>
+        <br>
+
+        <strong>example one</strong>
+        <br>
+        <br>
+
+        <img src='../src/images/example1.png'>
+        <br>
+        <br>
+
+        <strong>example two</strong>
+        <br>
+        <br>
+
+        <img src='../src/images/example2.png'>
+        <br>
+        <br>
+
+        If you said example one, you are correct!
+        <br>
+        <br>
+
+        These two examples are different because when determining which variables a function has access to, the position where the function is declared is more important than the position from which they are called.
+        <br>
+        <br>
+
+        Because the callback function in example 2 is declared outside of the forEach array method, it is unable to access the index function which it needs to work correctly. In example 1 because we have declared our callback function within the forEach array method, we can use the index variable happily.
+        <br>
+        <br>
+
+        I had assumed that being called inside the forEach method, our callback function would be able to use the index variable, but this is not the case. Lexical scoping is hugely important in javascript, and I’m glad to have learned this lesson now, rather than whilst working on production code!
       </p>
+    </article>
+
+    <article class='blog-post'>
+      <h2 class='blog-post-title'>Things you could do with APIs</h2>
+      <time class='blog-post-time'>8:32pm 03-11-2016</time>
       <p class='blog-post-content'>
         <strong>Rudimentary mind control</strong> - Scrape youtube comments then filter them by their emotional content using a sentiment analysis API. These comments could then be read to the user, whose mood should shift to match the sentiments expressed.
         <br>

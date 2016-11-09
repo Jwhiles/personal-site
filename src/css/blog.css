@@ -18,8 +18,12 @@
 .blog-post-content {
   margin: 30px auto;
   max-width: 760px;
+  text-align: left;
 }
 
-time {
+.blog-post-time {
   font-weight: bold;
+  margin: 30px auto;
+  max-width: 760px;
+  text-align: center;
 }
