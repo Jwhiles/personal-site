@@ -1,0 +1,22 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "A work in progress personal site with portfolio and blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jwhiles/personal-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jwhiles/personal-site/issues"
+  },
+  "homepage": "https://github.com/Jwhiles/personal-site#readme",
+  "devDependencies": {
+    "eslint": "^3.9.1"
+  }
+}
