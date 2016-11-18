@@ -13,10 +13,10 @@ server.register(inert, (err) => {
     path: `/`,
     method: `GET`,
     handler: (req, rep) => {
-      console.log('hi');
       rep.file(path.join(__dirname, `../src/pages/index.html`));
     }
-  }, {
+  },
+  {
     path: '/src/{folder}/{file}',
     method: `GET`,
     handler: (req, rep) => {
