@@ -4,7 +4,8 @@
   "description": "A work in progress personal site with portfolio and blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/starter.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,11 @@
   "homepage": "https://github.com/Jwhiles/personal-site#readme",
   "devDependencies": {
     "eslint": "^3.9.1"
+  },
+  "dependencies": {
+    "hapi": "^15.2.0",
+    "inert": "^4.0.2",
+    "joi": "^10.0.0",
+    "tape": "^4.6.2"
   }
 }
