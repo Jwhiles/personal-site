@@ -4,25 +4,34 @@ const path = require('path');
 const server = new hapi.Server();
 
 server.connection({
-  port: (process.env.PORT || 8080)
+  port: (process.env.PORT || 8080),
+  host: process.env.IP || '0.0.0.0',
+  routes: {
+    files: {
+      relativeTo: path.join(__dirname, '../src')
+    }
+  }
 });
 
-server.register(inert, (err) => {
-  if (err) { throw err; }
-  server.route([{
-    path: `/`,
-    method: `GET`,
-    handler: (req, rep) => {
-      rep.file(path.join(__dirname, `../src/pages/index.html`));
-    }
-  },
-  {
-    path: '/src/{folder}/{file}',
-    method: `GET`,
-    handler: (req, rep) => {
-      rep.file(`./src/${req.params.folder}/${req.params.file}`);
-    }
-  }]);
-});
+server.register(inert, () => {
+  server.route([
+    {
+      method: 'GET',
+      path: '/',
+      handler: (req, rep) => {
+        rep.file('pages/index.html');
+      }
+    },
+    {
+      method: 'GET',
+      path: '/{file*}',
+      handler: {
+        directory: {
+          path: '.'
+        }
+      }
+    }]);
+}
+);
 
 module.exports = server;
