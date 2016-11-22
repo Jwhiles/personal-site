@@ -4,7 +4,7 @@ const path = require('path');
 const server = new hapi.Server();
 
 server.connection({
-  port: (process.env.PORT || 8080),
+  port: process.env.PORT || 8080,
   host: process.env.IP || '0.0.0.0',
   routes: {
     files: {

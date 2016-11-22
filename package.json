@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "1.0.0",
   "description": "A work in progress personal site with portfolio and blog",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/starter.js"
