@@ -2,11 +2,22 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
+header {
+  width: 100%;
+  text-align: center;
+  transform: rotate(-0.3deg);
+  margin: 2px auto
+}
+
+h1 {
+  font-family: futura, sans-serif;
+  display: block;
+}
 
 .main {
-  margin-top: 20px;
   transition: all 200s ease
 }
 
