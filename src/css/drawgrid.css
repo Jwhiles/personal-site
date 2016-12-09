@@ -18,7 +18,7 @@ h1 {
 }
 
 .main {
-  transition: all 200s ease
+  transition: all 120s ease
 }
 
 .main:hover {
