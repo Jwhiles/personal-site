@@ -1,6 +1,7 @@
 const hapi = require('hapi');
 const inert = require('inert');
 const path = require('path');
+const routes = require('./route.js');
 const server = new hapi.Server();
 
 server.connection({
@@ -14,23 +15,7 @@ server.connection({
 });
 
 server.register(inert, () => {
-  server.route([
-    {
-      method: 'GET',
-      path: '/',
-      handler: (req, rep) => {
-        rep.file('pages/index.html');
-      }
-    },
-    {
-      method: 'GET',
-      path: '/{file*}',
-      handler: {
-        directory: {
-          path: '.'
-        }
-      }
-    }]);
+  server.route(routes);
 }
 );
 
