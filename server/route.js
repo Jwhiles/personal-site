@@ -16,7 +16,16 @@ const files = {
   }
 };
 
+const fourOhFour = {
+  method: '*',
+  path: '/{p*}',
+  handler: (req, rep) => {
+    rep('404040404004').code(404);
+  }
+};
+
 module.exports = [
   home,
-  files
+  files,
+  fourOhFour
 ];
