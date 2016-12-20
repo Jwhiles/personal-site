@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  transform: rotate(-0.3deg);
+  margin: 2px auto
+}
+
+h1 {
+  font-family: futura, sans-serif;
+  display: block;
+}
+
+.main {
+  transition: all 300s ease
+}
+
+.main:hover {
+  transform: skewX(180deg);
+}
+.col {
+  width: 1000px;
+  display: flex;
+  height: 25px;
+}
+
+.point {
+  width: 10%;
+  background-color: white;
+  border: solid black 0.1px;
+  transition: all 0.2s
+}
+
+.point:hover {
+  border: solid red 5px;
+}
